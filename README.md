@@ -14,7 +14,8 @@ This Terraform project provisions a basic AWS infrastructure that includes:
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Input Variables](#input-variables)
-
+- [Screenshots](#screenshot)
+- [Contact](#contact)
 
 ## Architecture
 
@@ -56,8 +57,8 @@ This Terraform project provisions a basic AWS infrastructure that includes:
 1. **Clone the repo:**
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
+git clone https://github.com/manaro-projects/project-1.git
+cd project-1
 ```
 
 2. **Initialize Terraform:**
@@ -99,3 +100,13 @@ After applying, Terraform will show the public IP address (if output is defined)
 | docker_image	| Docker image to run on the EC2 instance	| string	| yes |
 
 **Security Note:** Never commit `docker_pass` or secrets to version control. Use environment variables or a secure secrets manager.
+
+## Screenshot
+
+| **Index**                        | **Error**                        |
+| -------------------------------- | -------------------------------- |
+| ![index](./screenshot/index.png) | ![error](./screenshot/error.png) |
+
+## Contact
+Built with ❤️ by Ahmed Elhgawy
+Feel free to reach out at: ahmedelhgawy182@gmail.com

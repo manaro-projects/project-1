@@ -1,10 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 @app.route('/')
-def hello_word():
-  return "<h1>Hello World</h1><br><p>My Name is Ahmed Elhgawy </p><br><p>And My Email is 'ahmedelhgawy182@gmail.com'</p><br><p>feel free to connect me</p>"
+def hello_world():
+    return render_template('index.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error.html'), 404
+
 
 if __name__ == "__main__":
-  app.run(debug=True, host='0.0.0.0')
+  app.run(debug=False, host='0.0.0.0')
