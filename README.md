@@ -1,4 +1,4 @@
-# Terraform AWS VPC with Public Subnet and EC2 Docker Deployment
+# Manara Project 1
 
 This Terraform project provisions a basic AWS infrastructure that includes:
 
